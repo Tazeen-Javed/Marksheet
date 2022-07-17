@@ -1,0 +1,21 @@
+.main{display: flex; flex-direction: column; margin-left: 400px; border: 1px solid; width: 500px;
+     border-style: double; padding-left: 30px; background-color: burlywood;}
+td{width: 60px; border: 1px solid; }
+tr>th{width: 60px;}
+th{font-size: 16px; border: 1px solid; width: 60px;}
+.result{border: 1px solid; font-size: 22px;}
+table{border: 1px solid;}
+input{font-size: 16px; width: 60px;}
+button{font-size: 24px; border: 1px solid; border-style: thick; background-color:coral;}
+@media screen and (max-width: 769px){
+     .main{margin-left: -2px; width: 400px; font-size: 20px; margin-left: 80px;}
+     td{width: 50px;}
+}
+@media screen and (max-width: 376px)
+{
+     .main{width: 300px; font-size: 16px; margin-left: -2px;padding-right: 20px;}
+    .one{width: 30px; font-size: 14px; background-color: white;}
+     input{width: 50px; border: none; font-size: 14px;}
+     tr>th{width: 30px; font-size: 14px;}
+   
+}

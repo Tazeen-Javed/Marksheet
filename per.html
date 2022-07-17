@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1>Student's Marsksheet</h1>
+        <div class="box"></div>
+<form onsubmit="percentage(); return false;">
+<table>
+    <tr>
+        <th>Subject</th>
+        <th>Enter Total</th>
+        <th>Enter Marks</th>
+        <th>Your Perc:</th>
+        <th>Grades</th></tr>
+       </br>
+
+        <tr class="one">
+         <td><input id="subject1" type="text" required></td>
+        <td><input type="number" id="totalmarks1" required></td>
+       <td><input type="number" id="marks1" required></td>
+       <td><h3 id="result1"></h3></td>
+       <td><h3 id="Grade1"></h3></td></tr>
+
+       <tr class="one"><td><input id="subject2" type="text" required></td>
+        <td><input type="number" id="totalmarks2" required></td>
+       <td><input type="number" id="marks2" required></td>
+       <td><h3 id="result2"></h3></td>
+       <td><h3 id="Grade2"></h3></td></tr>
+
+       <tr class="one"><td><input id="subject3" type="text" required></td>
+        <td><input type="number" id="totalmarks3" required></td>
+       <td><input type="number" id="marks3" required></td>
+       <td><h3 id="result3"></h3></td>
+       <td><h3 id="Grade3"></h3></td></tr>
+
+       <tr class="one"><td><input id="subject4" type="text" required></td>        
+              <td><input type="number" id="totalmarks4" required></td>
+      <td><input type="number" id="marks4" required></td>
+                 <td><h3 id="result4"></h3></td>
+                 <td><h3 id="Grade4"></h3></td></tr>
+
+       <tr class="one"><td><input id="subject5" type="text" required></td>
+        <td><input type="number" id="totalmarks5" required></td>
+       <td><input type="number" id="marks5" required></td>
+       <td><h3 id="result5"></h3></td>
+       <td><h3 id="Grade5"></h3></td></tr>
+
+       <tr class="one"><td><input id="subject6" type="text" required></td>
+        <td><input type="number" id="totalmarks6" required></td>
+       <td><input type="number" id="marks6" required></td>
+       <td><h3 id="result6"></h3></td>
+       <td><h3 id="Grade6"></h3></td></tr>
+
+       <tr><th>Total Marks</th>    <td colspan="4"><h3 id="final1"></h3>       </td></tr>
+      <tr><th>Total Percentage</th><td colspan="4"><h3 id="final2"></h3>       </td></tr>
+      <tr><th> Final Grade</th>   <td colspan="4"><h3 id="final3"></h3>       </td></tr>
+
+
+</table>
+<td><button type="submit">Calculate</button></td>
+
+</form>
+    </div></div>
+
+<script>
+    function percentage(){
+        
+        let totalmarks1=document.querySelector("#totalmarks1").value;
+        let totalmarks2=+document.querySelector("#totalmarks2").value;
+        let totalmarks3=+document.querySelector("#totalmarks3").value;
+        let totalmarks4=+document.querySelector("#totalmarks4").value;
+        let totalmarks5=+document.querySelector("#totalmarks5").value;
+        let totalmarks6=+document.querySelector("#totalmarks6").value; 
+      //   let totalmarks = totalmarks1 + totalmarks2 + totalmarks3 + totalmarks4 + totalmarks5 + totalmarks6;
+        
+        
+        let marks1=+document.querySelector("#marks1").value;
+        let marks2=+document.querySelector("#marks2").value;
+        let marks3=+document.querySelector("#marks3").value;
+        let marks4=+document.querySelector("#marks4").value;
+        let marks5=+document.querySelector("#marks5").value;
+        let marks6=+document.querySelector("#marks6").value;
+
+        
+       
+        let result1=marks1 / totalmarks1 * 100;
+        let result2=marks2 / totalmarks2 * 100;
+        let result3=marks3 / totalmarks3 * 100;
+        let result4=marks4 / totalmarks4 * 100;
+        let result5=marks5 / totalmarks5 * 100;
+        let result6=marks6 / totalmarks6 * 100;
+        let final1=marks1 + marks2 + marks3 + marks4 + marks5 + marks6;
+        let final2= final1 / (600) * 100;
+        
+   if(marks1 >= 80){
+    document.querySelector("#Grade1").innerHTML=`A+`;
+   }
+   else if (marks1 >= 70 && marks1 <=79)
+   {
+    document.querySelector("#Grade1").innerHTML=`B`;
+   }
+   else if (marks1 >= 60 && marsk1 <= 69)
+   {
+    document.querySelector("#Grade1").innerHTML=`C`;
+   }
+   else if(marks1 >= 50 && marks1 <= 59)
+   {
+    document.querySelector("#Grade1").innerHTML=`D`;
+   }
+     else{
+        document.querySelector("#Grade1").innerHTML=`Fail`;
+     }
+
+
+     if(marks1 >= 80){
+    document.querySelector("#Grade1").innerHTML=`A+`;
+   }
+   else if (marks1 >= 70 && marks1 <=79)
+   {
+    document.querySelector("#Grade1").innerHTML=`B`;
+   }
+   else if (marks1 >= 60 && marks1 <= 69)
+   {
+    document.querySelector("#Grade1").innerHTML=`C`;
+   }
+   else if(marks1 >= 50 && marks1 <= 59)
+   {
+    document.querySelector("#Grade1").innerHTML=`D`;
+   }
+     else{
+        document.querySelector("#Grade1").innerHTML=`Fail`;
+     }
+
+
+     if(marks2 >= 80){
+    document.querySelector("#Grade2").innerHTML=`A+`;
+   }
+   else if (marks2 >= 70 && marks2 <=79)
+   {
+    document.querySelector("#Grade2").innerHTML=`B`;
+   }
+   else if (marks2 >= 60 && marks2 <= 69)
+   {
+    document.querySelector("#Grade2").innerHTML=`C`;
+   }
+   else if(marks2 >= 50 && marks2 <= 59)
+   {
+    document.querySelector("#Grade2").innerHTML=`D`;
+   }
+     else{
+        document.querySelector("#Grade2").innerHTML=`Fail`;
+     }
+
+
+
+     if(marks3 >= 80){
+    document.querySelector("#Grade3").innerHTML=`A+`;
+   }
+   else if (marks3 >= 70 && marks3 <=79)
+   {
+    document.querySelector("#Grade3").innerHTML=`B`;
+   }
+   else if (marks3 >= 60 && marks3 <= 69)
+   {
+    document.querySelector("#Grade3").innerHTML=`C`;
+   }
+   else if(marks3 >= 50 && marks3 <= 59)
+   {
+    document.querySelector("#Grade3").innerHTML=`D`;
+   }
+     else{
+        document.querySelector("#Grade3").innerHTML=`Fail`;
+     }
+
+
+
+
+     if(marks4 >= 80){
+    document.querySelector("#Grade4").innerHTML=`A+`;
+   }
+   else if (marks4 >= 70 && marks4 <=79)
+   {
+    document.querySelector("#Grade4").innerHTML=`B`;
+   }
+   else if (marks4 >= 60 && marks4 <= 69)
+   {
+    document.querySelector("#Grade4").innerHTML=`C`;
+   }
+   else if(marks4 >= 50 && marks4 <= 59)
+   {
+    document.querySelector("#Grade4").innerHTML=`D`;
+   }
+     else{
+        document.querySelector("#Grade4").innerHTML=`Fail`;
+     }
+
+
+
+     if(marks5 >= 80){
+    document.querySelector("#Grade5").innerHTML=`A+`;
+   }
+   else if (marks5 >= 70 && marks5 <=79)
+   {
+    document.querySelector("#Grade5").innerHTML=`B`;
+   }
+   else if (marks5 >= 60 && marks5 <= 69)
+   {
+    document.querySelector("#Grade5").innerHTML=`C`;
+   }
+   else if(marks5 >= 50 && marks5 <= 59)
+   {
+    document.querySelector("#Grade5").innerHTML=`D`;
+   }
+     else{
+        document.querySelector("#Grade5").innerHTML=`Fail`;
+     }
+
+
+
+
+     if(marks6 >= 80){
+    document.querySelector("#Grade6").innerHTML=`A+`;
+   }
+   else if (marks6 >= 70 && marks6 <=79)
+   {
+    document.querySelector("#Grade6").innerHTML=`B`;
+   }
+   else if (marks6 >= 60 && marks6 <= 69)
+   {
+    document.querySelector("#Grade6").innerHTML=`C`;
+   }
+   else if(marks6 >= 50 && marks6 <= 59)
+   {
+    document.querySelector("#Grade6").innerHTML=`D`;
+   }
+     else{
+        document.querySelector("#Grade6").innerHTML=`Fail`;
+     }
+
+
+     if(final1 >= 580){
+    document.querySelector("#final3").innerHTML=`A+`;
+   }
+   else if (final1 >= 500 && final1 <=579)
+   {
+    document.querySelector("#final3").innerHTML=`B`;
+   }
+   else if (final1 >= 400 && final1 <= 499)
+   {
+    document.querySelector("#final3").innerHTML=`C`;
+   }
+   else if(final1 >= 300 && final1 <= 399)
+   {
+    document.querySelector("#final3").innerHTML=`D`;
+   }
+    else {
+        document.querySelector("#final3").innerHTML=`Fail`;
+     }
+
+
+
+       document.querySelector("#result1").innerHTML=`${result1}%`
+       document.querySelector("#result2").innerHTML=`${result2}%`
+       document.querySelector("#result3").innerHTML=`${result3}%`
+       document.querySelector("#result4").innerHTML=`${result4}%`
+       document.querySelector("#result5").innerHTML=`${result5}%`
+       document.querySelector("#result6").innerHTML=`${result6}%`
+       document.querySelector("#final1").innerHTML=`${final1} out of 600`
+       document.querySelector("#final2").innerHTML=`${final2}%`
+       
+    }
+</script>
+</body>
+</html>
