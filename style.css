@@ -1,7 +1,7 @@
 .main{display: flex; flex-direction: column; margin-left: 400px; border: 1px solid; width: 500px;
      border-style: double; padding-left: 30px; background-color:darkgray; margin-top: 50px;}
      body{background-image: url(./images/result5.jpg); background-size: ;}
-td{width: 60px; border: 1px solid; }
+td{width: 60px; border: 1px solid;}
 tr>th{width: 60px;}
 th{font-size: 16px; border: 1px solid; width: 60px;}
 .result{border: 1px solid; font-size: 22px;}
@@ -14,9 +14,12 @@ button{font-size: 24px; border: 1px solid; border-style: thick; background-color
 }
 @media screen and (max-width: 376px)
 {
-     .main{width: 300px; font-size: 16px; margin-left: -2px;padding-right: 20px; margin-top: -px;}
-    .one{width: 30px; font-size: 14px; background-color: white;}
-     input{width: 50px; border: none; font-size: 14px;}
-     tr>th{width: 30px; font-size: 14px;}
+     .main{width: 320px; font-size: 16px; margin-left: -2px;padding-right: 20px; margin-top: -px;}
+     table{width: 150px; font-size: 14px;}
+     form{width: 100px;}
+    .one{width: 40px; font-size: 14px;}
+     input{width: 40px; border: none; font-size: 14px;}
+     tr>th{width: 40px; font-size: 14px;}
+     tr>td{font-size: 14px; width: 30px;}
    
 }

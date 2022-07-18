@@ -17,47 +17,47 @@
     <tr>
         <th>Subject</th>
         <th>Enter Total</th>
-        <th>Enter Marks</th>
+        <th>Marks Obt</th>
         <th>Your Perc:</th>
         <th>Grades</th></tr>
        </br>
 
         <tr class="one">
          <td><input id="subject1" type="text" required></td>
-        <td><input type="number" id="totalmarks1" required></td>
-       <td><input type="number" id="marks1" required></td>
-       <td><h3 id="result1"></h3></td>
-       <td><h3 id="Grade1"></h3></td></tr>
+        <th><input type="number" id="totalmarks1" required></th>
+       <th><input type="number" id="marks1" required></th>
+       <th><h3 id="result1"></h3></th>
+       <th><h3 id="Grade1"></h3></th></tr>
 
        <tr class="one"><td><input id="subject2" type="text" required></td>
-        <td><input type="number" id="totalmarks2" required></td>
-       <td><input type="number" id="marks2" required></td>
-       <td><h3 id="result2"></h3></td>
-       <td><h3 id="Grade2"></h3></td></tr>
+        <th><input type="number" id="totalmarks2" required></th>
+       <th><input type="number" id="marks2" required></th>
+       <th><h3 id="result2"></h3></th>
+       <th><h3 id="Grade2"></h3></th></tr>
 
        <tr class="one"><td><input id="subject3" type="text" required></td>
-        <td><input type="number" id="totalmarks3" required></td>
-       <td><input type="number" id="marks3" required></td>
-       <td><h3 id="result3"></h3></td>
-       <td><h3 id="Grade3"></h3></td></tr>
+        <th><input type="number" id="totalmarks3" required></th>
+       <th><input type="number" id="marks3" required></th>
+       <th><h3 id="result3"></h3></th>
+       <th><h3 id="Grade3"></h3></th></tr>
 
        <tr class="one"><td><input id="subject4" type="text" required></td>        
-              <td><input type="number" id="totalmarks4" required></td>
-      <td><input type="number" id="marks4" required></td>
-                 <td><h3 id="result4"></h3></td>
-                 <td><h3 id="Grade4"></h3></td></tr>
+              <th><input type="number" id="totalmarks4" required></th>
+      <th><input type="number" id="marks4" required></th>
+                 <th><h3 id="result4"></h3></th>
+                 <th><h3 id="Grade4"></h3></th></tr>
 
        <tr class="one"><td><input id="subject5" type="text" required></td>
-        <td><input type="number" id="totalmarks5" required></td>
-       <td><input type="number" id="marks5" required></td>
-       <td><h3 id="result5"></h3></td>
-       <td><h3 id="Grade5"></h3></td></tr>
+        <th><input type="number" id="totalmarks5" required></th>
+       <th><input type="number" id="marks5" required></th>
+       <th><h3 id="result5"></h3></th>
+       <th><h3 id="Grade5"></h3></th></tr>
 
        <tr class="one"><td><input id="subject6" type="text" required></td>
-        <td><input type="number" id="totalmarks6" required></td>
-       <td><input type="number" id="marks6" required></td>
-       <td><h3 id="result6"></h3></td>
-       <td><h3 id="Grade6"></h3></td></tr>
+        <th><input type="number" id="totalmarks6" required></th>
+       <th><input type="number" id="marks6" required></th>
+       <th><h3 id="result6"></h3></th>
+       <th><h3 id="Grade6"></h3></th></tr>
 
        <tr><th>Total Marks</th>    <td colspan="4"><h3 id="final1"></h3>       </td></tr>
       <tr><th>Total Percentage</th><td colspan="4"><h3 id="final2"></h3>       </td></tr>
@@ -73,30 +73,30 @@
 <script>
     function percentage(){
         
-        let totalmarks1=document.querySelector("#totalmarks1").value;
-        let totalmarks2=+document.querySelector("#totalmarks2").value;
-        let totalmarks3=+document.querySelector("#totalmarks3").value;
-        let totalmarks4=+document.querySelector("#totalmarks4").value;
-        let totalmarks5=+document.querySelector("#totalmarks5").value;
-        let totalmarks6=+document.querySelector("#totalmarks6").value; 
+        let totalmarks1=parseInt(document.querySelector("#totalmarks1").value);
+        let totalmarks2=parseInt(document.querySelector("#totalmarks2").value);
+        let totalmarks3=parseInt(document.querySelector("#totalmarks3").value);
+        let totalmarks4=parseInt(document.querySelector("#totalmarks4").value);
+        let totalmarks5=parseInt(document.querySelector("#totalmarks5").value);
+        let totalmarks6=parseInt(document.querySelector("#totalmarks6").value);
       //   let totalmarks = totalmarks1 + totalmarks2 + totalmarks3 + totalmarks4 + totalmarks5 + totalmarks6;
         
         
-        let marks1=+document.querySelector("#marks1").value;
-        let marks2=+document.querySelector("#marks2").value;
-        let marks3=+document.querySelector("#marks3").value;
-        let marks4=+document.querySelector("#marks4").value;
-        let marks5=+document.querySelector("#marks5").value;
-        let marks6=+document.querySelector("#marks6").value;
+        let marks1=parseInt(document.querySelector("#marks1").value);
+        let marks2=parseInt(document.querySelector("#marks2").value);
+        let marks3=parseInt(document.querySelector("#marks3").value);
+        let marks4=parseInt(document.querySelector("#marks4").value);
+        let marks5=parseInt(document.querySelector("#marks5").value);
+        let marks6=parseInt(document.querySelector("#marks6").value);
 
         
        
-        let result1=marks1 / totalmarks1 * 100;
-        let result2=marks2 / totalmarks2 * 100;
-        let result3=marks3 / totalmarks3 * 100;
-        let result4=marks4 / totalmarks4 * 100;
-        let result5=marks5 / totalmarks5 * 100;
-        let result6=marks6 / totalmarks6 * 100;
+        let result1=parseInt(marks1 / totalmarks1 * 100);
+        let result2=parseInt(marks2 / totalmarks2 * 100);
+        let result3=parseInt(marks3 / totalmarks3 * 100);
+        let result4=parseInt(marks4 / totalmarks4 * 100);
+        let result5=parseInt(marks5 / totalmarks5 * 100);
+        let result6=parseInt(marks6 / totalmarks6 * 100);
         let final1=marks1 + marks2 + marks3 + marks4 + marks5 + marks6;
         let final2= final1 / (600) * 100;
         
